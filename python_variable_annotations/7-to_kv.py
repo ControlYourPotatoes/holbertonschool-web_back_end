@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""takes a string k and an int OR
-float v as arguments and returns
-a tuple."""
+"""takes string k, int or float v and returns tuple"""
 from typing import Tuple, Union
 
 
