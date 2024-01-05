@@ -5,4 +5,3 @@
 def to_str(n: float) -> str:
     """Return str representation of float"""
     return str(n)
-
