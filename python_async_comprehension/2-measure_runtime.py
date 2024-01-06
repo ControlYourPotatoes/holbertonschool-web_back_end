@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Import async_comprehension and write a 
+Import async_comprehension and write a
 measure_runtime coroutine that will execute
 """
 import asyncio
