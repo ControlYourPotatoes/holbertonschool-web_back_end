@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Measures the runtime of an async comprehension"""
+"""
+Import async_comprehension and write a 
+measure_runtime coroutine that will execute
+"""
 import asyncio
+import time
+async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-wait_random = __import__('2-measure_runtime').wait_random
-
-async def measure_time(n: int, max_delay: int) -> float:
-    """Measures the runtime of an async comprehension"""
-    start = asyncio.get_event_loop().time()
-    await asyncio.gather(*(wait_random(max_delay) for i in range(n)))
-    end = asyncio.get_event_loop().time()
-    return (end - start) / n
-
+async def measure_runtime() -> float:
+    """Measures the total runtime"""
+    start = time.perf_counter()
+    await asyncio.gather(*(async_comprehension() for i in range(4)))
+    end = time.perf_counter()
+    return end - start
