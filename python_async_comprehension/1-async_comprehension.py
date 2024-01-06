@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""import async_generator and write a coroutine
-async_comprehension that takes no arguments.
-The coroutine will collect 10 random numbers"""
+"""import async_generator and write a coroutine"""
 import asyncio
 import random
 from typing import Generator
