@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Measures the runtime of an async comprehension"""
 import asyncio
-import typing
+
 
 wait_random = __import__('2-measure_runtime').wait_random
 
